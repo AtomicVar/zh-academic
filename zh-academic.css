@@ -1,0 +1,327 @@
+:root {
+    --side-bar-bg-color: white;
+    --window-border: none;
+    --search-select-bg-color: #575c61;
+    --active-file-bg-color: #f1f4f5;
+    --item-hover-bg-color: #f1f4f5;
+    --item-hover-text-color: black;
+    --control-text-color: #555;
+}
+
+@include-when-export url(https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css);
+
+html {
+    font-size: 12pt;
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: normal;
+    font-weight: normal;
+    src: local('STIX2Text Regular'),
+        url('./ZH-academic/STIX2Text-Regular.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: normal;
+    src: local('STIX2Text Italic'),
+        url('./ZH-academic/STIX2Text-Italic.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: normal;
+    font-weight: bold;
+    src: local('STIX2Text Bold'),
+        url('./ZH-academic/STIX2Text-Bold.woff') format('woff'),
+        url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Text';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Text Bold Italic'),
+    url('./ZH-academic/STIX2Text-BoldItalic.woff') format('woff'),
+    url('ttps://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/fonts/HTML-CSS/TeX/woff/MathJax_Main-BoldItalic.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'STIX2Math';
+    font-style: italic;
+    font-weight: bold;
+    src: local('STIX2Math'),url('./academic/STIX2Math.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('./ZH-academic/lmmonolt10-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('./ZH-academic/lmmonolt10-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('./ZH-academic/lmmonolt10-boldoblique-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Latin Modern Mono Light';
+    src: url('./ZH-academic/lmmonolt10-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: '华文中宋';
+    src: url('./ZH-academic/STZHONGS.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#write {
+    font-family: "STIX2Text", "Times New Roman", "华文中宋", "serif";
+    line-height: 1.5em;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.file-list-item-summary {
+    height: 36px;
+}
+
+.file-list-item {
+    padding-top: 18px !important;
+    padding-bottom: 18px;
+}
+
+#sidebar-loading-template.file-list-item {
+    padding-top: 0 !important;
+}
+
+a, a:visited {
+    color: #a00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+h1  {
+    font-size: 2.4em;
+}
+
+#write h1  {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5  {
+    font-size: 1.1em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+pre, code {
+    font-family: 'Source Code Pro', 'Latin Modern Mono Light', "Latin Modern Mono", monospace !important;
+}
+
+.footnotes {
+    display: list-item;
+    margin-left: 1em;
+}
+
+.md-fences {
+    border: 1px solid;
+}
+
+.md-fences.md-fences-with-lineno {
+    border: none;
+}
+
+.CodeMirror-linenumber {
+    color: #333;
+}
+
+*.in-text-selection,
+::selection,
+.CodeMirror-selected {
+    background: var(--search-select-bg-color);
+    color: var(--search-select-text-color) !important;
+    text-shadow: none;
+}
+
+a.md-toc-inner {
+    color: var(--text-color);
+}
+
+.cm-s-typora-default .cm-link {
+    color: #a00;
+    text-decoration: underline;
+}
+
+.cm-s-typora-default .cm-header, .cm-s-typora-default .cm-property {
+    color: black;
+}
+
+#typora-source .CodeMirror-lines {
+    -webkit-font-smoothing: auto;
+    max-width: 1000px;
+}
+
+.md-def-name:before,
+.md-def-name:after {
+    color: #2d2d2d;
+}
+
+sup.md-footnote {
+    background-color: initial;
+    color: inherit;
+}
+
+mark {
+    background: #fff387;
+}
+
+td, th {
+    border: 1px solid;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+
+/*table tr[cid]:first-child > td {
+    border-top: 3px double;
+}*/
+
+th {
+    border-bottom: 0;
+    padding-top: 2px;
+    background: #575c61;
+    border-color: #333;
+    color: #f3f3f3;
+}
+
+pre.md-meta-block {
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    padding: 5px;
+    margin-bottom: 1em;
+}
+
+.task-list-item input:before {
+    content: '\221A';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #bbb;
+    background-color: inherit;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+    color: inherit;
+}
+
+.md-task-list-item > input {
+    top: auto;
+    margin-left: -1.1em;
+    font-size: 1.3em;
+    margin-top: 0px;
+    -webkit-appearance: none;
+}
+
+.md-task-list-item input:before {
+    content: '\2610';
+    display: inline-block;
+    width: 1.25rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    text-align: center;
+    color: #bbb;
+    background-color: inherit;
+}
+
+.md-task-list-item input:checked:before,
+.md-task-list-item input[checked]:before{
+    color: inherit;
+    content: '\2611';
+}
+
+.task-list-item {
+    padding-left: 1.5em;
+}
+
+blockquote {
+    font-style: italic;
+    padding: 0.25em 24px;
+    position: relative;
+    color: #383838;
+    border-left: 2px solid;
+    
+}
+
+#write > blockquote {
+    padding: 0.25em 30px;
+    margin-left: -32px;
+    width: calc(100% + 32px);
+}
+
+#write >  .md-fences-with-lineno {
+    margin-left: -33px;
+    color: black;
+}
+/*
+img {
+	max-height: 20em;
+}*/
+
+.CodeMirror-linenumber {
+    min-width: 25px;
+}
+
+.md-header {
+    font-size: inherit !important;
+}
+
+/*blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}*/
