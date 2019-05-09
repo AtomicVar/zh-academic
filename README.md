@@ -6,10 +6,10 @@
 
 ![](https://i.loli.net/2019/05/09/5cd3e7cd02e0e.png)
 
-导出为PDF：
+导出为 PDF：
 
 ![](https://i.loli.net/2019/05/09/5cd3e9284a5e3.png)
 
 ## 安装方法
 
-直接下载本仓库为ZIP，将内容（`ZH-academic/` 和 `zh-academic.css`）解压缩至Typora主题文件夹内。
+直接下载本仓库为 ZIP，将内容（`ZH-academic/` 和 `zh-academic.css`）解压缩至 Typora 主题文件夹内。
