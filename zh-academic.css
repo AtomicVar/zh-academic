@@ -84,8 +84,14 @@ html {
 @font-face {
     font-family: '华文中宋';
     src: url('./ZH-academic/STZHONGS.woff') format('woff');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: '华文中宋';
+    src: url('./ZH-academic/STZHONGS_Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: bold;
 }
 
 #write {
