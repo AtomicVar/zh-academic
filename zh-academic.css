@@ -24,7 +24,7 @@ html {
 }
 
 @font-face {
-    font-family: 'STIX2Text';
+    font-family: 'STIX2TextItalic';
     font-style: italic;
     font-weight: normal;
     src: local('STIX2Text Italic'),
@@ -33,7 +33,7 @@ html {
 }
 
 @font-face {
-    font-family: 'STIX2Text';
+    font-family: 'STIX2TextBold';
     font-style: normal;
     font-weight: bold;
     src: local('STIX2Text Bold'),
@@ -298,10 +298,6 @@ blockquote {
     margin-left: -33px;
     color: black;
 }
-/*
-img {
-	max-height: 20em;
-}*/
 
 .CodeMirror-linenumber {
     min-width: 25px;
@@ -312,11 +308,11 @@ img {
 }
 
 strong {
-    font-family: '黑体';
+    font-family: STIX2TextBold, '黑体';
     font-weight: normal;
 }
 
 em {
-    font-family: '楷体';
+    font-family: STIX2TextItalic, '楷体';
     font-style: normal !important;
 }
