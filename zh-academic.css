@@ -8,10 +8,8 @@
     --control-text-color: #555;
 }
 
-@include-when-export url(https://raw.githubusercontent.com/slashfoo/lmweb/master/style/latinmodern-mono-light.css);
-
 html {
-    font-size: 12pt;
+    font-size: 10pt;
 }
 
 @font-face {
@@ -115,7 +113,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1  {
-    font-size: 2.4em;
+    font-size: 2.2em;
 }
 
 #write h1  {
@@ -136,10 +134,12 @@ h4 {
 
 h5  {
     font-size: 1.1em;
+    font-family: STIX2TextBold, '黑体';
 }
 
 h6 {
     font-size: 1em;
+    font-family: STIX2TextBold, '黑体';
 }
 
 p {
@@ -215,16 +215,12 @@ td, th {
     padding-right: 1ch;
 }
 
-/*table tr[cid]:first-child > td {
-    border-top: 3px double;
-}*/
-
 th {
     border-bottom: 0;
     padding-top: 2px;
-    background: #575c61;
+    background: #c4c4c4;
     border-color: #333;
-    color: #f3f3f3;
+    color: #000000;
 }
 
 pre.md-meta-block {
@@ -315,4 +311,16 @@ strong {
 em {
     font-family: STIX2TextItalic, '楷体';
     font-style: normal !important;
+}
+
+@media print {
+    /* for example: */
+    .typora-export * {
+        -webkit-print-color-adjust: exact;
+    }
+    /* add styles here */
+    html {
+        font-size: 10pt;
+        width: max-content;
+    }
 }
