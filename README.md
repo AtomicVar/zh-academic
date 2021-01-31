@@ -1,10 +1,11 @@
-# zh-academic - Typora 中文 LaTeX 学术风格主题
+# zh-academic - Typora 中文 LaTeX 风格主题
 
 此主题衍生于官方 [Academic 主题](https://theme.typora.io/theme/Academic/)。
 
 普通中文为「宋体」，粗体为「黑体」，斜体为「楷体」。
 
-![2021-01-31_16-24.png](https://i.loli.net/2021/01/31/sVveRGaQo3NObWT.png)
+导出 PDF 样式：
+![2021-01-31_16-50.png](https://i.loli.net/2021/01/31/36WsVYI8xQt4RE1.png)
 
 ## 安装方法
 
